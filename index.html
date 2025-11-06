@@ -42,30 +42,31 @@
   <!-- Service Cards -->
   <section class="services">
     <div class="container">
-      <h2 class="section-title">サービス内容</h2>
+      <div class="section-title">サービス内容</div>
+      <p class="section-intro">経営の相棒として、状況に寄り添いながら最適な解決策をデザインします。必要なサポートを、必要なタイミングで。</p>
       <div class="service-grid">
         <div class="service-card">
-          <div class="service-icon">📊</div>
+          <span class="service-tag">Service 01</span>
           <h3>経営支援</h3>
-          <p>収益改善、組織改革、事業戦略の立案と実行支援。経営課題を総合的に解決します。</p>
+          <p>収益構造の見直しや組織デザイン、事業戦略の実行まで、経営者の意思決定を伴走します。</p>
           <a href="service-management.html" class="service-link">詳しく見る →</a>
         </div>
         <div class="service-card">
-          <div class="service-icon">📈</div>
+          <span class="service-tag">Service 02</span>
           <h3>財務分析（PL/BS）</h3>
-          <p>損益計算書・貸借対照表を徹底分析。財務の健全性と成長戦略を可視化します。</p>
+          <p>損益計算書・貸借対照表を読み解き、ボトルネックを発見。指標設計と改善案を提示します。</p>
           <a href="service-finance.html" class="service-link">詳しく見る →</a>
         </div>
         <div class="service-card">
-          <div class="service-icon">💰</div>
+          <span class="service-tag">Service 03</span>
           <h3>補助金・助成金申請</h3>
-          <p>最新の補助金・助成金情報をキャッチし、申請から採択までフルサポートします。</p>
+          <p>常に最新の公募情報をチェックし、採択を見据えた書類作成とスケジュール管理を担います。</p>
           <a href="service-subsidy.html" class="service-link">詳しく見る →</a>
         </div>
         <div class="service-card">
-          <div class="service-icon">🤝</div>
+          <span class="service-tag">Service 04</span>
           <h3>融資伴走</h3>
-          <p>金融機関との交渉、事業計画書作成、資金調達戦略の立案まで全力で伴走します。</p>
+          <p>事業計画と資金繰りの筋道を描き、金融機関との折衝・資料準備を一貫して支援します。</p>
           <a href="service-funding.html" class="service-link">詳しく見る →</a>
         </div>
       </div>
@@ -169,27 +170,49 @@
   <div id="saveCardModal" class="modal">
     <div class="modal-content">
       <span class="modal-close">&times;</span>
-      <h3>名刺をスマホに保存</h3>
+      <h3>このページを保存する</h3>
+      <p class="modal-desc">名刺代わりに、スマートフォンのホーム画面へ保存する方法をご案内します。</p>
       <div class="device-tabs">
-        <button class="tab-btn active" data-device="ios">iPhone</button>
-        <button class="tab-btn" data-device="android">Android</button>
+        <button class="tab-btn active" data-device="ios">iPhoneの方</button>
+        <button class="tab-btn" data-device="android">Androidの方</button>
       </div>
       <div class="tab-content active" id="ios">
-        <ol>
-          <li>このページをSafariで開く</li>
-          <li>共有ボタン（四角い矢印）をタップ</li>
-          <li>「ホーム画面に追加」を選択</li>
-          <li>「追加」をタップして完了</li>
-        </ol>
+        <div class="bookmark-steps">
+          <div class="bookmark-step">
+            <span class="step-number">1</span>
+            <div>
+              <p>画面下の共有ボタンをタップ</p>
+              <span class="step-note">（四角に↑のアイコン）</span>
+            </div>
+          </div>
+          <div class="bookmark-step">
+            <span class="step-number">2</span>
+            <div>
+              <p>「ホーム画面に追加」を選択</p>
+              <span class="step-note">「追加」をタップすると完了です</span>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="tab-content" id="android">
-        <ol>
-          <li>このページをChromeで開く</li>
-          <li>メニューボタン（三点リーダー）をタップ</li>
-          <li>「ホーム画面に追加」を選択</li>
-          <li>「追加」をタップして完了</li>
-        </ol>
+        <div class="bookmark-steps">
+          <div class="bookmark-step">
+            <span class="step-number">1</span>
+            <div>
+              <p>画面右上のメニューボタンをタップ</p>
+              <span class="step-note">（︙のアイコン）</span>
+            </div>
+          </div>
+          <div class="bookmark-step">
+            <span class="step-number">2</span>
+            <div>
+              <p>「ホーム画面に追加」を選択</p>
+              <span class="step-note">表示名を確認して「追加」で完了</span>
+            </div>
+          </div>
+        </div>
       </div>
+      <button class="btn btn-dark modal-confirm" type="button">わかりました</button>
     </div>
   </div>
 

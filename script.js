@@ -11,6 +11,7 @@ const tabBtns = document.querySelectorAll('.tab-btn');
 const tabContents = document.querySelectorAll('.tab-content');
 const footerLine = document.getElementById('footerLine');
 const footerCard = document.getElementById('footerCard');
+const modalConfirmBtn = document.querySelector('.modal-confirm');
 
 // LINEで相談ボタン
 function openLine() {
@@ -20,18 +21,21 @@ function openLine() {
 
 // 名刺をスマホに保存モーダル
 function openSaveCardModal() {
+  if (!saveCardModal) return;
   saveCardModal.style.display = 'block';
   document.body.style.overflow = 'hidden';
 }
 
 // AI自己紹介モーダル
 function openAiIntroModal() {
+  if (!aiIntroModal) return;
   aiIntroModal.style.display = 'block';
   document.body.style.overflow = 'hidden';
 }
 
 // モーダルを閉じる
 function closeModal(modal) {
+  if (!modal) return;
   modal.style.display = 'none';
   document.body.style.overflow = 'auto';
 }
@@ -65,6 +69,8 @@ window.addEventListener('click', (e) => {
     closeModal(e.target);
   }
 });
+
+modalConfirmBtn?.addEventListener('click', () => closeModal(saveCardModal));
 
 // デバイスタブ切り替え
 tabBtns.forEach(btn => {
