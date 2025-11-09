@@ -205,6 +205,7 @@ p {
 }
 
 .service-card {
+  display: block;
   background: white;
   padding: 2rem;
   border-radius: 12px;
@@ -212,11 +213,20 @@ p {
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+.service-card:hover,
+.service-card:focus-visible {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 32px rgba(0,0,0,0.15);
+}
+
+.service-card:focus-visible {
+  outline: 3px solid rgba(6, 199, 85, 0.4);
+  outline-offset: 4px;
 }
 
 .service-tag {
@@ -235,18 +245,7 @@ p {
 
 .service-card p {
   color: #666;
-  margin-bottom: 1.5rem;
-}
-
-.service-link {
-  color: #06C755;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.service-link:hover {
-  color: #05a048;
+  margin-bottom: 0;
 }
 
 /* Trust Section */
